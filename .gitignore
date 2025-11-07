@@ -1,2 +1,23 @@
-# Project exclude paths
-/target/
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Maven ###
+target/
+*.log
+!.mvn/wrapper/maven-wrapper.jar
+
+### Logs ###
+*.log
+
+### OS generated files ###
+.DS_Store
+Thumbs.db
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
