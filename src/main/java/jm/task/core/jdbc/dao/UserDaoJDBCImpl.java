@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
 
-    private static final Connection connection = Util.getConnection();
+    private final Connection connection = new Util().getConnection();
 
     private static final String CREATE_TABLE =
             "CREATE TABLE IF NOT EXISTS users (" +
